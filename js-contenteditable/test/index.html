@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ContentEditable Test</title>
+	<style>
+		.content-editable {
+			padding: 6px 10px;
+			border: 1px solid #ddd;
+			color: #111;
+			min-height: 360px;
+			outline: none;
+			overflow: auto;
+			font-size: 16px;
+			border-radius: 3px;
+			white-space: pre-wrap;
+		};
+	</style>
+</head>
+<body>
+	<div class="content-editable" contenteditable="true"></div>
+	<script src="../lib/contenteditable.js"></script>
+	<script>
+		var div = document.querySelector("div");
+		setChangeListener(div, function(event){
+			// console.log(event.target.innerText);
+			console.log(event.target.innerHTML);
+		});
+	</script>
+</body>
+</html>

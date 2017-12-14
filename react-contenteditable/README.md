@@ -41,6 +41,7 @@ class MyComponent extends Component {
 ```
 
 ## Structure
-- lib/ compiled javascript.
-- src/ source javascript. Uses JSX and ES6.
-- test/ example about how to use the component.
+
+- [lib/](https://github.com/Marco2333/content-editable/tree/master/react-contenteditable/lib) compiled javascript.
+- [src/](https://github.com/Marco2333/content-editable/tree/master/react-contenteditable/src) source javascript. Uses JSX and ES6.
+- [test/](https://github.com/Marco2333/content-editable/tree/master/react-contenteditable/test) example about how to use the component.
